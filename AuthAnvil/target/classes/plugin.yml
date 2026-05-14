@@ -1,0 +1,11 @@
+name: AuthAnvil
+version: 2.0.0
+main: org.simplelogin.simplelogin.SimpleLogin
+api-version: "1.21"
+author: You
+description: Login with Anvil GUI (stable)
+
+commands:
+  authanvil:
+    description: AuthAnvil main command
+    usage: /authanvil reload

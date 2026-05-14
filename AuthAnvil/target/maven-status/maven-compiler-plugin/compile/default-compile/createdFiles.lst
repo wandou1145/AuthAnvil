@@ -1,0 +1,12 @@
+org\simplelogin\simplelogin\Listeners\ChatListener.class
+org\simplelogin\simplelogin\Listeners\MoveListener.class
+org\simplelogin\simplelogin\Listeners\PlayerJoinListener.class
+org\simplelogin\simplelogin\PlayerManager.class
+org\simplelogin\simplelogin\ConfigManager.class
+org\simplelogin\simplelogin\PasswordManager.class
+org\simplelogin\simplelogin\SimpleLogin.class
+org\simplelogin\simplelogin\GUI\AuthGUI.class
+org\simplelogin\simplelogin\Listeners\CommandListener.class
+org\simplelogin\simplelogin\PlayerManager$PlayerData.class
+org\simplelogin\simplelogin\SessionManager.class
+org\simplelogin\simplelogin\Listeners\CloseProtector.class

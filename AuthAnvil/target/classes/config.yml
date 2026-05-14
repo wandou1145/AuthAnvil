@@ -1,0 +1,84 @@
+# 管理员免密登录（拥有 OP 的玩家跳过密码验证）
+op-bypass: true
+
+# 登录有效时间（单位：分钟）
+session:
+  timeout: 1440
+
+# 左侧槽位（退出按钮）
+left-slot:
+  item-material: "RED_DYE"
+  item-name: "§c§l退出"
+  item-lore: "§7点击退出游戏"
+
+# 右侧槽位（确认按钮）
+right-slot:
+  item-material: "LIME_DYE"
+  item-name: "§a§l确认"
+  item-lore: "§7点击确认"
+
+# 中间槽位（自定义按钮）
+custom-slot:
+  enabled: true
+  item-material: "LIGHT_BLUE_DYE"
+  item-lore: "§7点击执行自定义命令"
+  commands:
+    - "tell %player% §e这是一个自定义按钮！"
+
+# 登录成功后执行的命令（%player% 替换为玩家名）
+login-commands:
+  - "tell %player% &a欢迎回来！"
+
+# 注册成功后执行的命令
+register-commands:
+  - "tell %player% &a注册成功！"
+
+# 密码规则
+password:
+  min-length: 4
+  max-length: 16
+  require-letter: false
+  require-number: false
+  max-attempts: 3
+  exceed-action: "kick"
+  tempban-duration: 30
+
+# 未登录时的限制
+restrictions:
+  disable-movement: true
+  disable-chat: true
+  disable-commands: true
+  allowed-commands:
+    - "/login"
+    - "/register"
+    - "/authanvil"
+  apply-blindness: true
+  apply-slowness: true
+
+# 注册限制
+registration:
+  max-accounts-per-ip: 3
+  allow-register: true
+
+# 登录超时设置
+force:
+  login-timeout: 60
+  timeout-action: "kick"
+  kick-message: "&c登录超时，请重新进入服务器"
+
+# 音效与特效
+effects:
+  login-sound: "entity.player.levelup"
+  register-sound: "entity.player.levelup"
+  wrong-password-sound: "entity.villager.no"
+  login-title: "&a欢迎回来！"
+  login-subtitle: "&7%player%"
+
+# 调试
+debug:
+  enabled: false
+  log-to-file: true
+
+# 数据库
+database:
+  type: "yaml"
